@@ -1,0 +1,17 @@
+:root {
+  font-size: 25px;
+  font-family: "sans-serif";
+  --text-primary: #7c616c;
+  --text-secondary: #d1b1cb;
+  --bg-primary: #eafdf8;
+  --bg-secondary: #ddcad9;
+  --transition-speed: all 1s ease;
+}
+
+body {
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}

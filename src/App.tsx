@@ -29,9 +29,11 @@ function App(): JSX.Element {
         <Sidebar menues={menues} />
       </SideMenue>
       <Main>
-        <BookList books={books} />
         <Switch>
-          <Route path="/dashboard" component={Dashboard} />
+          <Route
+            path="/dashboard"
+            render={(props) => <Dashboard books={books} {...props} />}
+          />
           <Route path="/bookings" component={Bookings} />
           <Redirect exact from="/" to="/dashboard" />
         </Switch>
@@ -44,15 +46,15 @@ export default App;
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 4rem 1fr;
-  grid-template-rows: 100px 1fr;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr;
 `;
 
 const Main = styled.main`
   grid-row: 2;
   grid-column: 1 / span 2;
   margin-left: 7rem;
-  padding: 1rem;
+  padding: 40px;
   height: 100%;
   transition: 1s;
 `;
@@ -69,7 +71,7 @@ const SideMenue = styled.div`
   grid-column: 1;
   border: gray solid 0.5px;
   position: fixed;
-  width: 6rem;
+  width: 200px;
   height: 100%;
   background-color: var(--bg-secondary);
   transition: width 1s;

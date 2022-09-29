@@ -1,5 +1,3 @@
-import { JsxElement } from "typescript";
-
 export interface IMenue {
   id: string | number;
   page: string;

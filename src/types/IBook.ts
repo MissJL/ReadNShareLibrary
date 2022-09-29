@@ -3,7 +3,7 @@ export interface IBook {
   title: string;
   author: Author;
   category: Category;
-  pages: Number;
+  pages: number;
   imgUrl: string;
 }
 
@@ -15,6 +15,6 @@ interface Category {
 interface Author {
   id: string;
   name: string;
-  age: Number;
+  age: number;
   mail: string;
 }

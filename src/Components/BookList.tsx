@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import { IBook } from "../types/IBook";
 import Book from "./Book";
 
@@ -7,12 +8,18 @@ interface Props {
 
 function BookList({ books }: Props) {
   return (
-    <span>
+    <Container>
       {books.map((books) => (
-        <Book {...books} />
+        <Book {...books} key={books.id} />
       ))}
-    </span>
+    </Container>
   );
 }
 
 export default BookList;
+
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+`;

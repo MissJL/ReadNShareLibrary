@@ -10,7 +10,7 @@ const books = [
     },
     category: { id: "1", genre: "Thriller" },
     pages: 301,
-    imgUrl: "images/NatureKingdom.jfif",
+    imgUrl: "images/naturekingdom.jfif",
   },
   {
     id: "2",
@@ -23,7 +23,7 @@ const books = [
     },
     category: { id: "2", genre: "Horror" },
     pages: 652,
-    imgUrl: "images/BeyondtheShadows.jpg",
+    imgUrl: "images/beyondtheshadows.jpg",
   },
   {
     id: "3",
@@ -36,7 +36,7 @@ const books = [
     },
     category: { id: "3", genre: "Fantasy" },
     pages: 310,
-    imgUrl: "images/thehobbit.jfif",
+    imgUrl: "images/thehobbit.png",
   },
   {
     id: "4",

@@ -10,20 +10,20 @@ function Sidebar({ menues }: Props) {
   return (
     <Container>
       <div className="logo">ReadnShare.</div>
-      <ul>
+      <div>
         <div>
           {menues.map((menue) => (
-            <a key={menue.id}>
+            <div key={menue.id}>
               <NavLink to={menue.link} className="nav-link">
                 <span className="nav-menue">
                   {menue.icon}
                   {menue.page}
                 </span>
               </NavLink>
-            </a>
+            </div>
           ))}
         </div>
-      </ul>
+      </div>
     </Container>
   );
 }
